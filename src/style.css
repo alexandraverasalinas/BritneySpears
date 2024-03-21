@@ -97,7 +97,7 @@ h2 {
 }
 
 p {
-  transform: scaleX(0.8);
+  transform: scaleX(1);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: rgb(255, 243, 243);

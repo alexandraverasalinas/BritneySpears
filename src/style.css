@@ -1,6 +1,7 @@
 body {
     background: #000000;
-
+    
+    place-items: center;
 }
 
 .logo {
@@ -43,9 +44,6 @@ body {
 
 
 header {
-
-    padding: 0.1%;
-    padding-bottom: 1.8%;
     color: rgb(234, 54, 141);
 }
 
@@ -54,7 +52,7 @@ h1 {
     text-align: center;
     font-size: 82px;
     text-shadow: 5px 5px 15px rgba(234, 54, 141, 0.6);
-    color: #ea368d;
+    color: #f02788;
     font-family: "Trade Winds", system-ui;
 }
 
@@ -68,13 +66,41 @@ h2 {
     font-size: 27px;
 }
 
+.photo-container {
+  width: 90%;
+  padding-top: -400cm;
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.photo {
+  margin: 0 10px;
+  filter: drop-shadow(0px 5px 18px #54022d);
+  transition: 1s;
+}
+
+.photo img {
+  display: block;
+  width: 250px;
+  height: 300px;
+
+  border-radius: 8px;
+}
+
+.photo:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  filter: drop-shadow(0px 5px 18px #94fffd);
+}
+
 p {
+  transform: scaleX(0.8);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: rgb(255, 243, 243);
     font-size: 18px;
-
-    display: flex;
-    flex-direction: row;
 }
 

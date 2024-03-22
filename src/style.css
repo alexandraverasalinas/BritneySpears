@@ -43,14 +43,12 @@ body {
   }
 
 
-header {
-    color: rgb(234, 54, 141);
-}
+
 
 h1 {
     margin-top: 1.5%;
     text-align: center;
-    font-size: 82px;
+    font-size: 86px;
     text-shadow: 5px 5px 15px rgba(234, 54, 141, 0.6);
     color: #f02788;
     font-family: "Trade Winds", system-ui;
@@ -63,27 +61,168 @@ h2 {
     margin-top: -0.3%;
     color: #3ddae5;
     text-shadow: 5px 5px 10px rgba(80, 223, 233, 0.3);
-    font-size: 27px;
+    font-size: 29px;
+}
+
+h3 {
+  transform: scaleX(1);
+    font-family: "Poppins", sans-serif;
+    margin-top: 4%;
+    font-weight: 500;
+    color: rgb(255, 243, 243);
+    font-size: 23px;
+    text-align: center;
 }
 
 .photo-container {
   width: 90%;
-  padding-top: -400cm;
+  margin-top: -260%;
   padding: 10px;
   margin: 100px auto;
-  display: grid;
-  display: flex;
-  grid-template-row: 50px 50px;
+}
+
+.row {
   justify-content:center;
 }
 
+.col-sm-3 {
+
+  filter: drop-shadow(0px 5px 18px #ab0058);
+  transition: 1s;
+}
+
+.col-sm-3 img {
+  max-width:100%;
+  border-radius: 9px;
+}
+
+.col-sm-3:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  filter: drop-shadow(0px 5px 18px #94fffd);
+}
 
 
-p {
+/* p {
   transform: scaleX(1);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: rgb(255, 243, 243);
     font-size: 18px;
+} */
+
+
+
+.box-container {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-container .box {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius: 7px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box-container .box .icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.box-container .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #F02788;
+  background: #F02788;
+}
+
+.box-container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #F02788;
+  background: #F02788;
+}
+
+
+.box-container .box:nth-child(2) .icon {
+  box-shadow: 0 0 0 0 #F679B6;
+  background: #F679B6;
+}
+
+.box-container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px #F679B6;
+  background: #F679B6;
+}
+
+.box-container .box:nth-child(3) .icon {
+  box-shadow: 0 0 0 0 #AC81DA;
+  background: #AC81DA;
+}
+
+.box-container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px #AC81DA;
+  background: #AC81DA;
+}
+
+.box-container .box:nth-child(4) .icon {
+  box-shadow: 0 0 0 0 #92EBF2;
+  background: #92EBF2;
+}
+
+.box-container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 400px #92EBF2;
+  background: #92EBF2;
+}
+
+.box-container .box:nth-child(5) .icon {
+  box-shadow: 0 0 0 0 #50DFE9;
+  background: #50DFE9;
+}
+
+.box-container .box:nth-child(5):hover .icon {
+  box-shadow: 0 0 0 400px #50DFE9;
+  background: #50DFE9;
+}
+
+
+
+.box-container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.box-container .box .content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin:0;
+  padding:0;
+}
+
+.box-container .box:hover .content {
+  color: white;
+}
+
+h4 {
+  font-weight: bold;
+  margin-top: 5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
